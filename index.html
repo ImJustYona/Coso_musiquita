@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Yonathan Urrutia">
+  <meta name="description" content="Biblioteca Virtual De Música.">
+  <title>Rhythmo</title>
+  <link rel="icon" href="img/loguito.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer> </script>
+</head>
+
+<body>
+  <div class="texto">
+    <h1 class="DescripcionPrincipal">
+      Bienvenido a la página principal de Rhythmo,
+      ¡Aquí encontrarás tu próximo Genero musical o Artista favorito!
+      ¿No es eso emocionante?
+      Con esta variada selección de Generos musicales y Artistas, con más de 150 canciones,
+      ¡Podemos asegurarte que encontrarás tu canción favorita!
+      Y si solo quieres escuchar algo de musica, puedes entrar al apartado de "Playlist",
+      ¡Donde encontrarás todas y cada una de nuestras canciones registradas!
+      ¡Dale click al boton de abajo y Escucha algunas de nuestras tantas canciones!
+    </h1>
+  </div>
+  <div class="barranavegacion">
+    <div class="LoguitoPrincipal">
+      <img src="img/loguito_maschiquito.png" alt="logo">
+    </div>
+    <a href="index.html">Inicio</a>
+    <a href="playlist.html">Playlist</a>
+  </div>
+
+  <section class="reproductor_musica">
+    <h2>
+      Nombre
+    </h2>
+    <p>
+      Artista
+    </p>
+    <audio id="cancion">
+      <source src="" type="music/mpeg" />
+    </audio>
+    <div class="controles">
+      <button class="atras control">
+        <i class="bi bi-rewind-fill"></i>
+      </button>
+      <button class="reproducir-pausa icono-control">
+        <i class="bi bi-play-fill" id="icono-control"></i>
+      </button>
+      <button class="siguiente control ">
+        <i class="bi bi-fast-forward-fill"></i>
+      </button>
+    </div>
+    <input type="range" value="0" id="progreso" />
+  </section>
+</body>
+
+</html>

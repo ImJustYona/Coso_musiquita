@@ -1,0 +1,150 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-image: url('img/fondo.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.texto{
+    background-color: rgba(0, 0, 0, 0.822);
+    display: block;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 100px;
+    color:rgb(255, 255, 255);
+    border-radius: 7px;
+    font-size: 14px;
+    }
+
+.barranavegacion {
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100px;           
+    height: 100vh;          
+    background-color: rgba(255, 137, 59, 0.7); 
+    color: rgb(0, 0, 0);
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;  
+    align-items: center;  
+    font-family: "nunito";       
+    font-size: large;
+  }
+  
+  .LoguitoPrincipal {
+    max-width: 100%;   
+    height: auto; 
+    max-height: 150px; 
+    display: block;
+    margin: 0 auto 30px auto;
+    object-fit: contain;
+  }
+
+  .titulo {
+    color: rgb(0, 0, 0);         
+    width: 100%;                
+    box-sizing: border-box;     
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .barranavegacion a {
+    color: rgb(0, 0, 0);
+    display: block;          
+    width: 100%;                
+    box-sizing: border-box;     
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .barranavegacion a:hover {
+    background-color: rgba(20, 20, 20, 0.7); 
+    color:rgb(255, 169, 40)
+  }
+
+.reproductor_musica {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 05px 05px;
+  margin-bottom: auto;
+  margin-left: 100px;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.822);
+  color: rgb(255, 255, 255); 
+}
+
+.reproductor_musica {
+  font-size:large;
+ line-height: 1.6;
+ font-family:'Courier New', Courier, monospace;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  
+}
+#progreso {
+  appearance: none;
+  width: 70%;
+  height: 7px;
+  border-radius: 4px;
+  cursor:pointer;
+  background: rgba(78, 78, 78, 0.4);
+}
+
+#progreso::-webkit-slider-thumb {
+  appearance: none;
+  background: rgba(226, 226, 226, 0.9);
+  width: 16px;
+  aspect-ratio:1/1;
+  border-radius: 50%;
+  box-shadow: 0 6px 9px rgba(228, 228, 228, 0.212);
+}
+
+.controles {
+  display:flex;
+  justify-content: center;
+}
+
+.controles button{
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin: 20px;
+  background-color: rgba(165, 165, 165, 0.3);
+  color: rgba(226, 226, 226);
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  outline:0;
+  font-size: 1.5rem;
+  box-shadow: 0 6px 9px rgba(228, 228, 228, 0.205);
+  cursor: pointer;
+  transition: all 0.1s linear;
+
+}
+
+.controles .control:hover{
+  transform: scale(1.1);
+}
+
+.controles .icono-control {
+  transform: scale(1.3);
+}
+
+.controles .icono-control:hover{
+  transform: scale(1.4);
+}
